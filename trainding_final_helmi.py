@@ -13,7 +13,7 @@ import base64
 import ccxt
 from fonctions import *
 import time as tm
-import streamlit
+import streamlit as st
 
 
 
@@ -23,7 +23,7 @@ market=['AAVE/USDT','LUNA/USDT','MATIC/USDT','THETA/USDT','VET/USDT','SOL/USDT',
         'EOS/USDT','BCH/USDT','LTC/USDT','LINK/USDT','XLM/USDT','ETH/USDT','BTC/USDT','UNI/USDT','ADA/USDT','DOT/USDT',
         'KSM/USDT','BNB/USDT','XRP/USDT','DOGE/USDT']#mettre ces crypto pour le cloud  (ETH , ADA, DOT, BNB, DOGE)
 
-
+st.write(market)
 apiKey = '2CNNMG6X4XEJhXzEGVa3hVPztX83jpMldyUlks4c3XWNJz4Gn8fZKnRDZYtELO0M'
 secret = 'vG4AJ9HifbF0X83cOn5qICUU4xB8Xs5eEpz0Y3Wp6qns7rq0KfMwc0qNmeRNpI5X'
 
