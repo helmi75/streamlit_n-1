@@ -287,7 +287,7 @@ def  algo_achat_vente(exchange , nom_crypto_vente, nom_crypto_achat):
          pass
     else :         
         #Vendre 
-        sell = vente (exchange,  nom_crypto_vente , balence['total'])
+        #sell = vente (exchange,  nom_crypto_vente , balence['total'])
         print ('vendage : ', nom_crypto_vente) 
         
         
@@ -299,7 +299,7 @@ def  algo_achat_vente(exchange , nom_crypto_vente, nom_crypto_achat):
             dic = exchange.fetchTicker(var2)
             dic['last']
             
-            buy = exchange.create_market_buy_order (var2 ,(montant_USDT*pourcentage)/ dic['last'])
+            #buy = exchange.create_market_buy_order (var2 ,(montant_USDT*pourcentage)/ dic['last'])
             return  buy   
         
         #achat        
@@ -350,6 +350,5 @@ def crypto_a_vendre(exchange, market ):
     
     crypto_a_vendre = df_log[df_log['side']=='buy'].index[0]
     return crypto_a_vendre
-
 
     
