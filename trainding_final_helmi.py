@@ -13,6 +13,7 @@ import base64
 import ccxt
 from fonctions import *
 import time as tm
+import streamlit
 
 
 
